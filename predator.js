@@ -6,7 +6,7 @@ module.exports=class Predator  extends LivingCreature{
         super(x,y)
         this.count = 8;
         this.directions = [];
-
+        
     }
 
     getNewCordinates() {
@@ -42,7 +42,7 @@ module.exports=class Predator  extends LivingCreature{
         let oneN =random(all)
         
         if (oneN) {
-            this.count--
+            this.count--;
             matrix[this.y][this.x] = 0
             this.x = oneN[0];
             this.y = oneN[1];

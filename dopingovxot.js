@@ -6,7 +6,6 @@ module.exports=class Dopingovxot extends LivingCreature {
     constructor(x, y) {
         super(x, y)
         this.directions = [];
-
         this.energy = 8;
         this.count = 8;
     }

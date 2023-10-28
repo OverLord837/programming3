@@ -5,7 +5,7 @@ module.exports=class Bomb extends LivingCreature {
     constructor(x, y) {
         super(x,y)
         this.min=4
-        this.max = 20
+        this.max = 20;
         this.count = Math.floor(Math.random() *(this.max-this.min+1) )+this.min;
         this.directions = [];
 

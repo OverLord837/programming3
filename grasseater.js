@@ -94,7 +94,7 @@ module.exports=class GrassEat  extends LivingCreature{
     }
     mull() {
         var newCell = random(this.chooseCell(0));
-
+       
         if (newCell) {
 
             var grassEatObj = new GrassEat(newCell[0], newCell[1]);
@@ -102,7 +102,7 @@ module.exports=class GrassEat  extends LivingCreature{
             grassEatArr.push(grassEatObj);
 
             matrix[newCell[1]][newCell[0]] = 2;
-            this.energy = this.energy / 2
+            this.energy = this.energy / 2;
 
 
 
